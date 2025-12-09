@@ -12,7 +12,7 @@
   --red-color: #b71c1c;
 
   /* Brand Colors */
-  --primary-color: var(--blue-color);
+  --primary-color: var(--black-color);
   --secondary-color: #26a69a;
   --accent-color: #9c27b0;
   --positive-color: #21ba45;
@@ -20,7 +20,6 @@
   --info-color: #0f2c61;
   --warning-color: #f2c037;
   --dark-color: #1d1d1d;
-  --color: #353535;
 
   /* Font Weight */
   --font-weight-light: 200;
@@ -42,11 +41,13 @@
   --spacing-3: 2.5rem;
   --spacing-4: 3rem;
   --spacing-5: 4rem;
+
+  --header-height: 4rem;
 }
 
 body {
   font-family: var(--body-font);
-  color: var(--blue-color);
+  color: var(--black-color);
   font-size: var(--font-size-5);
 }
 
@@ -88,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: var(--font-weight-bold);
-  height: 4rem;
+  height: var(--header-height);
 }
 
 .nav__list {
@@ -112,4 +113,33 @@ body {
   left: 0;
   top: 1.6rem;
   position: absolute;
+}
+
+/* Home */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-5) 0;
+}
+
+.home__title {
+  animation: fadeIn 1.2s ease-in forwards;
+  opacity: 0;
+  font-size: var(--font-size-2);
+  line-height: calc(var(--font-size-2) * 1.4); /*반응형을 위해 이렇게 설정*/
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacing-3);
+  color: var(--grey-color);
+}
+
+.home__title-color {
+  color: var(--primary-color);
 }

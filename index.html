@@ -23,7 +23,7 @@
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -50,30 +50,14 @@
 
     <main>
       <!--Home-->
-      <section id="home">
+      <section class="home container" id="home">
         <!--Home Data-->
-        <div>
-          <h2>
-            안녕하세요!<br />
-            김혜지입니다!<br />
+        <div class="home__data">
+          <h2 class="home__title">
+            안녕하세요<br />
+            <strong class="home__title-color">백엔드 개발자</strong>를 희망하는
+            <strong class="home__title-color">김혜지</strong>입니다!<br />
           </h2>
-
-          <a href="#contact">Contact</a>
-
-          <div>
-            <a
-              href="https://github.com/hjkim977"
-              target="_blank"
-              title="혜지의 깃허브"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <!--Home Image-->
-        <div>
-          <img src="./images/home/profile.png" alt="혜지 프로필 이미지" />
         </div>
       </section>
 
@@ -289,6 +273,15 @@
       <section id="contact">
         <h2>Contact</h2>
 
+        <div>
+          <a
+            href="https://github.com/hjkim977"
+            target="_blank"
+            title="혜지의 깃허브"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
         <div>
           <form>
             <input type="text" name="name" placeholder="이름" required />
