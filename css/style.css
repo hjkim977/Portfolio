@@ -17,9 +17,10 @@
   --accent-color: #9c27b0;
   --positive-color: #21ba45;
   --negative-color: var(--red-color);
-  --info-color: #31ccec;
+  --info-color: #0f2c61;
   --warning-color: #f2c037;
   --dark-color: #1d1d1d;
+  --color: #353535;
 
   /* Font Weight */
   --font-weight-light: 200;
@@ -86,8 +87,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: var(--font-weight-black);
-  height: 5rem;
+  font-weight: var(--font-weight-bold);
+  height: 4rem;
 }
 
 .nav__list {
@@ -103,13 +104,12 @@ body {
   position: relative;
 }
 
-.active-link::after,
 .nav__link:hover::after {
   background-color: var(--white-color);
-  height: 0.18rem;
+  height: 0.15rem;
   content: '';
   width: 100%;
   left: 0;
-  top: 2rem;
+  top: 1.6rem;
   position: absolute;
 }
