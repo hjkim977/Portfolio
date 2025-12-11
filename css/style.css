@@ -143,3 +143,24 @@ body {
 .home__title-color {
   color: var(--primary-color);
 }
+
+.home__scroll {
+  position: absolute; /*부모 요소를 기준으로 원하는 곳에 배치*/
+  bottom: 10%; /*부모 기준에서 아래에서 10%*/
+  color: #7c9ed1;
+  animation: arrowMove 1.2s infinite; /*1.2초 동안 반복*/
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5; /*처음에 보일 때는 반투명하게*/
+  }
+  50% {
+    opacity: 0.8; /*중간에는 0.8만큼 보이게*/
+  }
+  100% {
+    transform: translateY(7px);
+    opacity: 0; /*끝날때 안보이게*/
+  }
+}
