@@ -8,7 +8,7 @@
   --white-color: #ffffff;
   --black-color: #141414;
   --grey-color: #616161;
-  --blue-color: #0336ff;
+  --yellow-color: #f2c037;
   --red-color: #b71c1c;
 
   /* Brand Colors */
@@ -18,7 +18,6 @@
   --positive-color: #21ba45;
   --negative-color: var(--red-color);
   --info-color: #0f2c61;
-  --warning-color: #f2c037;
   --dark-color: #1d1d1d;
 
   /* Font Weight */
@@ -42,7 +41,7 @@
   --spacing-4: 3rem;
   --spacing-5: 4rem;
 
-  --header-height: 4rem;
+  --header-height: 4.5rem;
 }
 
 body {
@@ -76,44 +75,48 @@ body {
 
 /* Header */
 .header {
-  background-color: var(--info-color);
-  color: var(--white-color);
+  background-color: var(--white-color);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1; /* 제일 앞으로 나오게끔 */
+  z-index: 1000; /* 제일 앞으로 나오게끔 */
+  box-shadow: inset 0 -5px 5px -5px #f1e25c;
 }
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: var(--font-weight-bold);
   height: var(--header-height);
 }
 
 .nav__list {
+  width: 1280px;
+  height: var(--header-height);
   display: flex;
+  justify-content: space-between;
 }
 
 .nav__item {
-  margin-left: var(--spacing-4);
-  margin-right: var(--spacing-4);
+  margin: auto 0;
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-medium);
+  color: var(--grey-color);
 }
 
-.nav__link {
-  position: relative;
+.nav__logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav__link:hover::after {
-  background-color: var(--white-color);
-  height: 0.15rem;
-  content: '';
-  width: 100%;
-  left: 0;
-  top: 1.6rem;
-  position: absolute;
+.nav__img {
+  height: 42px;
+}
+
+.nav__link:hover {
+  color: var(--yellow-color);
+  font-weight: var(--font-weight-bold);
 }
 
 /* Home */
