@@ -69,7 +69,7 @@ body {
 
 /* Layout */
 .container {
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--spacing-1);
 }
@@ -213,4 +213,44 @@ body {
 .about__img {
   max-width: 280px;
   border-radius: 0.5rem;
+}
+
+/* Contact */
+.contact__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__data {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact__box {
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 1rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+}
+
+.contact__box:hover {
+  transform: translateY(-4px);
+}
+
+.contact__img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.75rem;
+}
+
+.contact__text {
+  font-size: var(--font-size-5);
+  color: var(--grey-color);
 }
