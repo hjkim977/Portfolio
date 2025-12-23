@@ -92,82 +92,186 @@
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
 
-        <div>
-          <article>
+        <div class="skills__container container">
+          <article class="skills__box">
             <div>
               <!--백엔드-->
-              <h3>BACKEND</h3>
-              <article>
-                <div>
+              <h3 class="skills__subtitle">BACKEND</h3>
+              <article class="skills__data">
+                <div class="skills__names">
                   <!--icon-->
-                  <i class="fa-brands fa-python"></i>
+                  <i class="fa-brands fa-python skills__icon"></i>
                   <!--skill name-->
-                  <span>PYTHON</span>
+                  <span class="skills__name">PYTHON</span>
                 </div>
                 <div>
                   <!--percentage-->
-                  <span>85%</span>
+                  <span class="skills__percentage">75%</span>
                 </div>
-                <progress id="python" max="100" value="85"></progress>
+                <progress
+                  class="skills__progress"
+                  id="python"
+                  max="100"
+                  value="75"
+                ></progress>
               </article>
             </div>
           </article>
-          <article>
+          <article class="skills__box">
             <div>
               <!--프론트엔드-->
-              <h3>FRONTEND</h3>
-              <article>
-                <div>
+              <h3 class="skills__subtitle">FRONTEND</h3>
+              <article class="skills__data">
+                <div class="skills__names">
                   <!--icon-->
-                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-html5 skills__icon"></i>
                   <!--skill name-->
-                  <span>HTML5</span>
+                  <span class="skills__name">HTML5</span>
                 </div>
                 <div>
                   <!--percentage-->
-                  <span id="html5">85%</span>
+                  <span class="skills__percentage" id="html5">65%</span>
                 </div>
-                <progress id="html5" max="100" value="85"></progress>
+                <progress
+                  class="skills__progress"
+                  id="html5"
+                  max="100"
+                  value="65"
+                ></progress>
               </article>
-              <article>
-                <div>
+              <article class="skills__data">
+                <div class="skills__names">
                   <!--icon-->
-                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-css3-alt skills__icon"></i>
                   <!--skill name-->
-                  <span>CSS3</span>
+                  <span class="skills__name">CSS3</span>
                 </div>
                 <div>
                   <!--percentage-->
-                  <span id="css3">85%</span>
+                  <span class="skills__percentage" id="css3">65%</span>
                 </div>
-                <progress id="css3" max="100" value="85"></progress>
+                <progress
+                  class="skills__progress"
+                  id="css3"
+                  max="100"
+                  value="65"
+                ></progress>
               </article>
-              <article>
-                <div>
+              <article class="skills__data">
+                <div class="skills__names">
                   <!--icon-->
-                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-js skills__icon"></i>
                   <!--skill name-->
-                  <span>JAVASCRIPT</span>
+                  <span class="skills__name">JAVASCRIPT</span>
                 </div>
                 <div>
                   <!--percentage-->
-                  <span id="javascript">85%</span>
+                  <span class="skills__percentage" id="javascript">55%</span>
                 </div>
-                <progress id="javascript" max="100" value="85"></progress>
+                <progress
+                  class="skills__progress"
+                  id="javascript"
+                  max="100"
+                  value="55"
+                ></progress>
               </article>
-              <article>
-                <div>
+              <article class="skills__data">
+                <div class="skills__names">
                   <!--icon-->
-                  <i class="fa-brands fa-vuejs"></i>
+                  <i class="fa-brands fa-vuejs skills__icon"></i>
                   <!--skill name-->
-                  <span>VUE.JS</span>
+                  <span class="skills__name">VUE.JS</span>
                 </div>
                 <div>
                   <!--percentage-->
-                  <span id="vue.js">85%</span>
+                  <span class="skills__percentage" id="vue.js">50%</span>
                 </div>
-                <progress id="vue.js" max="100" value="85"></progress>
+                <progress
+                  class="skills__progress"
+                  id="vue.js"
+                  max="100"
+                  value="50"
+                ></progress>
               </article>
+            </div>
+          </article>
+          <article class="skills__box">
+            <div>
+              <!--기타-->
+              <h3 class="skills__subtitle">ECT</h3>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!--icon-->
+                  <img src="/images/skills/django_icon.png" class="skills__icon__img" ></img>
+                  <!--skill name-->
+                  <span class="skills__name">DJANGO</span>
+                </div>
+                <div>
+                  <!--percentage-->
+                  <span class="skills__percentage" id="django">55%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="django"
+                  max="100"
+                  value="55"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!--icon-->
+                  <img src="/images/skills/docker_icon.png" class="skills__icon__img"></img>
+                  <!--skill name-->
+                  <span class="skills__name">DOCKER</span>
+                </div>
+                <div>
+                  <!--percentage-->
+                  <span class="skills__percentage" id="docker">50%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="docker"
+                  max="100"
+                  value="50"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!--icon-->
+                  <img src="/images/skills/mysql_icon.png" class="skills__icon__img"></img>
+                  <!--skill name-->
+                  <span class="skills__name">MYSQL</span>
+                </div>
+                <div>
+                  <!--percentage-->
+                  <span class="skills__percentage" id="mysql">50%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="mysql"
+                  max="100"
+                  value="50"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!--icon-->
+                  <i class="fa-brands fa-git skills__icon"></i>
+                  <!--skill name-->
+                  <span class="skills__name">GIT</span>
+                </div>
+                <div>
+                  <!--percentage-->
+                  <span class="skills__percentage" id="git">45%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="git"
+                  max="100"
+                  value="45"
+                ></progress>
+              </article>
+
             </div>
           </article>
         </div>

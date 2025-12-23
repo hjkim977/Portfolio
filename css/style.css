@@ -15,7 +15,6 @@
   --primary-color: var(--black-color);
   --secondary-color: #ffa600;
   --accent-color: #9c27b0;
-  --positive-color: #21ba45;
   --negative-color: var(--red-color);
   --info-color: #0f2c61;
   --dark-color: #1d1d1d;
@@ -42,6 +41,11 @@
   --spacing-5: 4rem;
 
   --header-height: 4.5rem;
+
+  --box-shadow-1: rgb(255, 226, 173) 0px 1px 4px;
+  --box-shadow-2: rgb(255, 226, 173) 0px 5px 15px;
+
+  --border-color: #fff2c7;
 }
 
 body {
@@ -219,6 +223,70 @@ html {
   border-radius: 0.5rem;
 }
 
+/* Skills */
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.skills__box {
+  box-shadow: var(--box-shadow-1);
+  height: 110%;
+}
+
+.skills__subtitle {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  color: var(--grey-color);
+  margin: var(--spacing-2);
+  overflow: hidden;
+  cursor: default;
+}
+
+.skills__data {
+  margin: var(--spacing-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.8rem 1rem;
+  font-weight: var(--font-weight-medium);
+  overflow: hidden;
+  cursor: default;
+}
+
+.skills__names {
+  display: flex;
+  align-items: center;
+}
+
+.skills__progress {
+  position: absolute;
+  left: var(--spacing-1);
+  bottom: 0;
+  appearance: none;
+  height: 6px;
+  width: 92%;
+}
+
+.skills__icon,
+.skills__icon__img {
+  width: 1rem;
+  margin-right: 0.4rem;
+}
+
+.skills__progress::-webkit-progress-bar {
+  background: #e7e7e7;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills__progress::-webkit-progress-value {
+  background: var(--yellow-color);
+  width: 48px;
+}
+
 /* Contact */
 .contact__container {
   display: flex;
@@ -244,9 +312,8 @@ html {
   padding: 1rem;
   border-width: 2px;
   border-style: solid;
-  border-color: #ffe815;
-  border-radius: 30px;
-  box-shadow: 0 8px 20px rgba(102, 95, 3, 0.12);
+  border-color: #fff2c7;
+  box-shadow: var(--box-shadow-1);
 }
 
 .contact__box:hover {
