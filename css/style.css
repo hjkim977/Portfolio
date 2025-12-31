@@ -186,8 +186,8 @@ html {
 .section {
   padding: calc(var(--header-height) + 1rem) 0;
   height: 100vh;
-  scroll-snap-align: start; /* 스크롤이 멈출 지점을 섹션의 시작점으로 설정 */
-  scroll-snap-stop: always; /* 한 번의 휠 동작에 한 섹션씩만 넘어가도록 설정 */
+  scroll-snap-align: start; /*스크롤이 멈출 지점을 섹션의 시작점으로 설정 */
+  scroll-snap-stop: always; /*한 번의 휠 동작에 한 섹션씩만 넘어가도록 설정 */
 }
 
 .section__title {
@@ -341,4 +341,47 @@ html {
   margin: 0.75rem;
   font-size: var(--font-size-5);
   color: var(--secondary-color);
+}
+
+/* Certifications */
+
+.certifications__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+
+.certifications__box {
+  margin: 3%;
+  padding: 5%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff2c7;
+  box-shadow: var(--box-shadow-1);
+}
+
+.certifications__subtitle {
+  margin-bottom: 1rem;
+  color: var(--black-color);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  overflow: hidden;
+  cursor: default;
+}
+
+.certifications__date {
+  margin-bottom: 1rem;
+  color: var(--grey-color);
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-medium);
+  overflow: hidden;
+  cursor: default;
+}
+
+.certifications__text {
+  color: var(--grey-color);
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-light);
+  overflow: hidden;
+  cursor: default;
 }
