@@ -52,7 +52,6 @@ body {
   font-family: var(--body-font);
   color: var(--black-color);
   font-size: var(--font-size-5);
-  height: 100vh; /* 스크롤바가 생기는 대상이 body이므로 높이 지정 */
 }
 
 .font-weight-light {
@@ -137,8 +136,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: var(--spacing-5) 0;
-  scroll-snap-align: start; /*스크롤이 멈출 지점을 섹션의 시작점으로 설정 */
-  scroll-snap-stop: always; /*한 번의 휠 동작에 한 섹션씩만 넘어가도록 설정 */
 }
 
 .home__title {
@@ -177,17 +174,10 @@ body {
   }
 }
 
-html {
-  scroll-behavior: smooth; /* 부드러운 이동 */
-  scroll-snap-type: y mandatory; /* 수직 방향 스냅 강제 적용 */
-}
-
 /* Section */
 .section {
   padding: calc(var(--header-height) + 1rem) 0;
   height: 100vh;
-  scroll-snap-align: start; /*스크롤이 멈출 지점을 섹션의 시작점으로 설정 */
-  scroll-snap-stop: always; /*한 번의 휠 동작에 한 섹션씩만 넘어가도록 설정 */
 }
 
 .section__title {
