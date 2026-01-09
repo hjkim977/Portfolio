@@ -22,28 +22,22 @@
         <!--메뉴-->
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list">
+            <li class="nav__logo">
+              <a href="#home" class="nav__brand">
+              <img class="nav__img" src="./images/nav/home_button.png"/>
+              </a>
+            </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
               <a href="#projects" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__logo">
-              <a href="#home" class="nav__brand"
-                ><img class="nav__img" src="./images/nav/home_button.png"
-              /></a>
             </li>
             <li class="nav__item">
               <a href="#educations" class="nav__link">Educations</a>
             </li>
             <li class="nav__item">
               <a href="#certifications" class="nav__link">Certifications</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -56,11 +50,13 @@
         <!--Home Data-->
         <div class="home__data">
           <h2 class="home__title">
-            안녕하세요<br />
-            <strong class="home__title-color">수정</strong>
-            <strong class="home__title-color">수정 수정</strong>
-            예정입니다!<br />
+            신입 백엔드 개발자 <strong class="home__title__name">김혜지</strong>입니다.<br />
           </h2>
+          <p class="home__text">
+            지금까지 전공과 다른 삶을 살았습니다.<br />
+            늦게 시작한 만큼 모르는 것을 인정하고 배우며<br />
+            어제보다 더 나은 개발자가 되는 것을 목표로 합니다.<br />
+          </p>
         </div>
         <div class="home__scroll">
           <i class="fa-solid fa-angles-down"></i>
@@ -74,216 +70,122 @@
         <div class="about__container container">
           <img
             class="about__img"
-            src="./images/about/profile.png"
+            src="./imagess/about/profile.png"
             alt="혜지 프로필 이미지"
           />
+          <div class="about__boxes">
+              <div class="about__box">
+                <img
+                  class="about__box__img"
+                  src="./images/contact/home_icon.png"
+                  alt="주소"
+                />
+                <p class="about__box__text">경기도 부천시</p>
+              </div>
+              <div class="about__box">
+                <img
+                  class="about__box__img"
+                  src="./images/contact/phone_icon.png"
+                  alt="번호"
+                />
+                <p class="about__box__text">010-5077-7991</p>
+              </div>
+              <div class="about__box">
+                <img
+                  class="about__box__img"
+                  src="./images/contact/email_icon.png"
+                  alt="이메일"
+                />
+                <p class="about__box__text">hjkim9726@naver.com</p>
+              </div>
+              <div class="about__box">
+                <img
+                  class="about__box__img"
+                  src="./images/contact/github_icon.png"
+                  alt="깃허브"
+                />
+                <a
+                  class="about__box__text__click"
+                  href="https://github.com/hjkim977"
+                  target="_blank"
+                  >@hjkim977</a
+                >
+              </div>
+              <div class="about__box">
+                <img
+                  class="about__box__img"
+                  src="./images/contact/velog_icon.png"
+                  alt="벨로그"
+                />
+                <a
+                  class="about__box__text__click"
+                  href="https://velog.io/@hjkim977/posts"
+                  target="_blank"
+                  >hjkim977.log</a
+                >
+              </div>
+            </div>
           <div class="about__data">
-            <h3 class="about__subtitle">서브 타이틀 수정 예정.</h3>
-            <p class="about__text">
-              소개글도 수정 예정 <br />
-              수정 할 예정이에요 <br />
-              수정 예정입니다
-            </p>
+            <article>
+              <h3 class="about__subtitle">서브 타이틀 수정 예정.</h3>
+              <p class="about__text">
+                소개글도 수정 예정 <br />
+                수정 할 예정이에요 <br />
+                수정 예정입니다
+              </p>
+            </article>
+            <article>
+              <h3 class="about__subtitle">SKills&Tools</h3>
+              <article class="skills__box">
+                <!--백엔드-->
+                <h3 class="skills__subtitle">BACKEND</h3>
+                <div class="skills__data">
+                  <i class="fa-brands fa-python skills__icon" title="PYTHON"></i>
+                </div>
+              </article>
+              <article class="skills__box">
+                <!--프론트엔드-->
+                <h3 class="skills__subtitle">FRONTEND</h3>
+                <div class="skills__data">
+                  <i class="fa-brands fa-html5 skills__icon" title="HTML5"></i>
+                  <i class="fa-brands fa-css3-alt skills__icon" title="CSS3"></i>
+                  <i class="fa-brands fa-js skills__icon" title="JAVASCRIPT"></i>
+                  <i class="fa-brands fa-vuejs skills__icon" title="VUE.JS"></i>
+                </div>
+              </article>
+              <article class="skills__box">
+                <!--기타-->
+                <h3 class="skills__subtitle">ECT</h3>
+                <div class="skills__data">
+                  <img src="/images/skills/django_icon.png" class="skills__icon__img" title="DJANGO" ></img>
+                  <img src="/images/skills/docker_icon.png" class="skills__icon__img" title="DOCKER"></img>
+                  <img src="/images/skills/mysql_icon.png" class="skills__icon__img" title="MYSQL"></img>
+                  <i class="fa-brands fa-git skills__icon" title="GIT"></i>
+                </div>
+              </article>
+            </article>
           </div>
-        </div>
-      </section>
-
-      <!--Skills-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-
-        <div class="skills__container container">
-          <article class="skills__box">
-            <div>
-              <!--백엔드-->
-              <h3 class="skills__subtitle">BACKEND</h3>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <i class="fa-brands fa-python skills__icon"></i>
-                  <!--skill name-->
-                  <span class="skills__name">PYTHON</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage">75%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="python"
-                  max="100"
-                  value="75"
-                ></progress>
-              </article>
-            </div>
-          </article>
-          <article class="skills__box">
-            <div>
-              <!--프론트엔드-->
-              <h3 class="skills__subtitle">FRONTEND</h3>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <i class="fa-brands fa-html5 skills__icon"></i>
-                  <!--skill name-->
-                  <span class="skills__name">HTML5</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="html5">65%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="html5"
-                  max="100"
-                  value="65"
-                ></progress>
-              </article>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <i class="fa-brands fa-css3-alt skills__icon"></i>
-                  <!--skill name-->
-                  <span class="skills__name">CSS3</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="css3">65%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="css3"
-                  max="100"
-                  value="65"
-                ></progress>
-              </article>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <i class="fa-brands fa-js skills__icon"></i>
-                  <!--skill name-->
-                  <span class="skills__name">JAVASCRIPT</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="javascript">55%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="javascript"
-                  max="100"
-                  value="55"
-                ></progress>
-              </article>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <i class="fa-brands fa-vuejs skills__icon"></i>
-                  <!--skill name-->
-                  <span class="skills__name">VUE.JS</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="vue.js">50%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="vue.js"
-                  max="100"
-                  value="50"
-                ></progress>
-              </article>
-            </div>
-          </article>
-          <article class="skills__box">
-            <div>
-              <!--기타-->
-              <h3 class="skills__subtitle">ECT</h3>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <img src="/images/skills/django_icon.png" class="skills__icon__img" ></img>
-                  <!--skill name-->
-                  <span class="skills__name">DJANGO</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="django">55%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="django"
-                  max="100"
-                  value="55"
-                ></progress>
-              </article>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <img src="/images/skills/docker_icon.png" class="skills__icon__img"></img>
-                  <!--skill name-->
-                  <span class="skills__name">DOCKER</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="docker">50%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="docker"
-                  max="100"
-                  value="50"
-                ></progress>
-              </article>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <img src="/images/skills/mysql_icon.png" class="skills__icon__img"></img>
-                  <!--skill name-->
-                  <span class="skills__name">MYSQL</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="mysql">50%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="mysql"
-                  max="100"
-                  value="50"
-                ></progress>
-              </article>
-              <article class="skills__data">
-                <div class="skills__names">
-                  <!--icon-->
-                  <i class="fa-brands fa-git skills__icon"></i>
-                  <!--skill name-->
-                  <span class="skills__name">GIT</span>
-                </div>
-                <div>
-                  <!--percentage-->
-                  <span class="skills__percentage" id="git">45%</span>
-                </div>
-                <progress
-                  class="skills__progress"
-                  id="git"
-                  max="100"
-                  value="45"
-                ></progress>
-              </article>
-
-            </div>
-          </article>
         </div>
       </section>
 
       <!--Projects-->
       <section class="projects section" id="projects">
         <h2 class="section__title">Projects</h2>
-        <div>
+        <div class="projects__container container">
           <article>
-            <h3>클린컬리(Clean Kurly)</h3>
-            <p>제작 기간 :</p>
+            <h3>레시픽(Recipick)</h3>
+            <p>제작 기간 : 2024.11.5 ~ 2024.12.13</p>
+            <p>사용 기술 : PYTHON, VUE.js, HTML, CSS, JAVASCRIPT, DJANGO, DOCKER</p>
+          </article>
+          <article>
+            <h3>클린컬리2(Clean Kurly)</h3>
+            <p>제작 기간 : 2024.10.16 ~ 2024.10.30</p>
+            <p>사용 기술 : PYTHON, HTML, CSS, JAVASCRIPT, DJANGO</p>
+          </article>
+          <article>
+            <h3>클린컬리1(Clean Kurly)</h3>
+            <p>제작 기간 : 2024.9.2 ~ 2024.9.13</p>
+            <p>사용 기술 : PYTHON, HTML, CSS, JAVASCRIPT, DJANGO</p>
           </article>
         </div>
       </section>
@@ -291,7 +193,16 @@
       <!--Educations-->
       <section class="educations section" id="educations">
         <h2 class="section__title">Educations</h2>
-        <div>
+        <div class="educations__container container">
+          <article>
+            <h3>대학교</h3>
+            <div>
+              <h3>학점은행제</h3>
+              <p>정보통신공학</p>
+              <p>2023.10~2024.07</p>
+              <p>3.72/4.5</p>
+            </div>
+          </article>
           <article>
             <div>
               <h3>인하공업전문대학교</h3>
@@ -300,14 +211,8 @@
               <p>3.87/4.5</p>
             </div>
           </article>
-          <article>
-            <div>
-              <h3>학점은행제</h3>
-              <p>정보통신공학</p>
-              <p>2023.10~2024.07</p>
-              <p>3.72/4.5</p>
-            </div>
-          </article>
+
+          <h3>교육</h3>
           <article>
             <div>
               <h3>멋쟁이사자처럼</h3>
@@ -387,75 +292,6 @@
               <p class="certifications__text">
                 스프레드시트, 데이터베이스 활용능력을 평가하는 국가기술자격 시험
               </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!--Contact-->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact</h2>
-
-        <div class="contact__container container">
-          <article class="contact__data">
-            <div class="contact__box">
-              <div class="contact__subtitle">주소</div>
-              <img
-                class="contact__img"
-                src="./images/contact/home_icon.png"
-                alt="주소"
-              />
-              <p class="contact__text">경기도 부천시</p>
-            </div>
-
-            <div class="contact__box">
-              <div class="contact__subtitle">휴대폰 번호</div>
-              <img
-                class="contact__img"
-                src="./images/contact/phone_icon.png"
-                alt="번호"
-              />
-              <p class="contact__text">010-5077-7991</p>
-            </div>
-
-            <div class="contact__box">
-              <div class="contact__subtitle">이메일</div>
-              <img
-                class="contact__img"
-                src="./images/contact/email_icon.png"
-                alt="이메일"
-              />
-              <p class="contact__text">hjkim9726@naver.com</p>
-            </div>
-
-            <div class="contact__box">
-              <div class="contact__subtitle">깃허브</div>
-              <img
-                class="contact__img"
-                src="./images/contact/github_icon.png"
-                alt="깃허브"
-              />
-              <a
-                class="contact__text__click"
-                href="https://github.com/hjkim977"
-                target="_blank"
-                >@hjkim977</a
-              >
-            </div>
-
-            <div class="contact__box">
-              <div class="contact__subtitle">벨로그</div>
-              <img
-                class="contact__img"
-                src="./images/contact/velog_icon.png"
-                alt="벨로그"
-              />
-              <a
-                class="contact__text__click"
-                href="https://velog.io/@hjkim977/posts"
-                target="_blank"
-                >hjkim977.log</a
-              >
             </div>
           </article>
         </div>
