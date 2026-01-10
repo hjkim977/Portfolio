@@ -18,14 +18,17 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="nav container">
+        <!--이미지(로고)-->
+        <div class="nav__logo">
+          <img class="nav__img" src="./images/nav/home_button.png"/>
+        </div>
+
         <!--메뉴-->
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list">
-            <li class="nav__logo">
-              <a href="#home" class="nav__brand">
-              <img class="nav__img" src="./images/nav/home_button.png"/>
-              </a>
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
