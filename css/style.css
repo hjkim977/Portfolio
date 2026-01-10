@@ -13,7 +13,7 @@
   --primary-color: #0f2c61;
   --secondary-color: #f3f7fa;
   --accent-color: #e62e65;
-  --background-color: #f8fafc;
+  --background-color: #fafdff;
 
   /* Font Weight */
   --font-weight-light: 200;
@@ -47,6 +47,19 @@
   padding: 0 var(--spacing-1);
 }
 
+body {
+  font-family: var(--body-font);
+  color: var(--black-color);
+  margin-top: var(--header-height);
+  background-color: var(--background-color);
+}
+
+section {
+  min-height: 100vh;
+  padding-top: var(--header-height);
+}
+
+/* Header */
 .header {
   background-color: var(--white-color);
   position: fixed;
