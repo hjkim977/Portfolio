@@ -19,11 +19,6 @@
   <body>
     <header class="header">
       <nav class="nav container">
-        <!--이미지(로고)-->
-        <div class="nav__logo">
-          <img class="nav__img" src="./images/nav/home_button.png"/>
-        </div>
-
         <!--메뉴-->
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list">
@@ -49,20 +44,25 @@
 
     <main>
       <!--Home-->
-      <section class="home container" id="home">
+      <section class="home" id="home">
         <!--Home Data-->
         <div class="home__data">
-          <h2 class="home__title">
-            신입 백엔드 개발자 <strong class="home__title__name">김혜지</strong>입니다.<br />
-          </h2>
-          <p class="home__text">
-            지금까지 전공과 다른 삶을 살았습니다.<br />
-            늦게 시작한 만큼 모르는 것을 인정하고 배우며<br />
-            어제보다 더 나은 개발자가 되는 것을 목표로 합니다.<br />
-          </p>
-        </div>
-        <div class="home__scroll">
-          <i class="fa-solid fa-angles-down"></i>
+          <div class="home__logo">
+            <img class="home__logo__img" src="./images/home/home_img.png">
+          </div>
+
+          <div class="home__search__bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" class="home__input" value="신입 백엔드 개발자 김혜지" readonly>
+            <div class="search-tools">
+              <i class="fa-solid fa-keyboard"></i>
+              <i class="fa-solid fa-microphone"></i>
+              <input type="button" class="home__click" value="click">
+            </div>
+          </div>
+          <div class="home__scroll">
+            <i class="fa-solid fa-angles-down"></i>
+          </div>
         </div>
       </section>
 
