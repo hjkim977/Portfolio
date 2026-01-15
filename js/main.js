@@ -1,11 +1,7 @@
-let greeting = 'Hello, world!';
+function functionHomeClick() {
+  const searchBar = document.querySelector('.home__search__bar');
+  const content = document.querySelector('.home__click__content');
 
-console.log(greetting);
-
-let nickname = '혜지';
-let hobby = ['헬스', '요가'];
-
-let person = {
-  nickname: nickname,
-  hobby: hobby,
-};
+  searchBar.classList.toggle('expand');
+  content.classList.toggle('active');
+}
