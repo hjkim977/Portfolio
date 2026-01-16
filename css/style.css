@@ -257,6 +257,7 @@ section {
   font-size: var(--font-size-6);
   font-weight: var(--font-weight-bold);
   animation: click 1.5s infinite ease-in-out;
+  cursor: pointer;
 }
 
 .home__click__content {
