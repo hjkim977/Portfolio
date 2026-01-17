@@ -130,6 +130,13 @@ section {
   height: 17px;
 }
 
+.line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
 /* Header */
 .header {
   background-color: var(--white-color);
@@ -329,5 +336,3 @@ section {
   margin: auto 0;
   animation: scroll-bounce 2s infinite ease-in-out;
 }
-
-/* Certifications */
