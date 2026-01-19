@@ -176,6 +176,12 @@ section {
 }
 
 .nav__link:hover {
+  color: var(--grey-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-6);
+}
+
+.nav__link.active {
   color: var(--accent-color);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-6);
