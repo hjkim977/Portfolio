@@ -135,6 +135,7 @@ section {
   border: none;
   height: 1px;
   background-color: var(--border-color);
+  margin-bottom: var(--spacing-2);
 }
 
 /* Header */
@@ -341,4 +342,32 @@ section {
   color: var(--accent-color);
   margin: auto 0;
   animation: scroll-bounce 2s infinite ease-in-out;
+}
+
+/* Certifications */
+.certifications__box {
+  margin: var(--spacing-2) var(--spacing-1);
+}
+
+.certifications__title {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-5);
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.certifications__subtitle {
+  font-weight: var(--font-weight-bold);
+}
+
+.certifications__date {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-light);
+  margin-bottom: 0.5rem;
+}
+
+.certifications__text {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-medium);
 }
