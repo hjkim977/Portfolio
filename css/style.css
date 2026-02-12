@@ -138,6 +138,11 @@ section {
   margin-bottom: var(--spacing-2);
 }
 
+.ellipsis-icon {
+  font-size: 0.9rem;
+  color: var(--grey-color);
+}
+
 /* Header */
 .header {
   background-color: var(--white-color);
@@ -342,6 +347,80 @@ section {
   color: var(--accent-color);
   margin: auto 0;
   animation: scroll-bounce 2s infinite ease-in-out;
+}
+
+/* About  */
+.about__group {
+  margin: var(--spacing-2) var(--spacing-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.about__me {
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.about__name {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-1);
+}
+
+.about__sub {
+  display: flex;
+  gap: var(--spacing-1);
+}
+
+.about__job {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-1);
+}
+
+.about__profile {
+  width: 250px;
+  height: auto;
+  margin-bottom: var(--spacing-1);
+  border-radius: 10%;
+}
+
+.about__text {
+  font-size: var(--font-size-6);
+  line-height: 2;
+}
+
+.about__text-title {
+  font-size: var(--font-size-4);
+  line-height: 2.5;
+}
+
+.about__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem 2rem;
+  max-width: 300px;
+}
+
+.about__item {
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about__img {
+  width: 37px;
+  height: 37px;
+}
+
+.about__click {
+  font-size: 0.95rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.about__click:hover {
+  text-decoration: underline;
 }
 
 /* Projects */
